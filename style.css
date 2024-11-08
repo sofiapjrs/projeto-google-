@@ -1,0 +1,351 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #202124;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding: 6px 14px;
+}
+
+h1 {
+    text-align: center;
+    color:red;
+}
+
+.logo-google {
+    height: 92px;
+    display: block;
+    margin: 50px auto 20px auto;  
+}
+
+a{
+    text-decoration: none;
+    color: #000000de;
+    font-size: 13px;
+}
+
+.link-cabecalho{
+    color: #000000de;
+    font-size: 13px;
+}
+
+.caixa-icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 29px;
+}
+
+.apps {
+    width: 24px;
+    fill: rgb(8, 8, 8);
+}
+
+.button{
+    border: aqua;
+    color: aliceblue;
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 20px;
+    background-color: aliceblue;
+}
+
+.caixa-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.caixa-rodape--borda{
+    border-bottom: 1px solid white;
+}
+
+.caixa-links{
+    display: flex;
+    gap: 30px;
+    justify-content:flex-start;
+}
+
+.caixa-link{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.botao-login{
+    background-color: #0b57d0; 
+    color: white; 
+    padding: 12px 10px;
+    border: none; 
+    border-radius: 100px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    }
+    
+    .botao-login:hover {
+    background-color: #2569d6f8; 
+    }
+
+    .link-cabecalho:hover{
+        border-bottom: 1px solid black; 
+        text-decoration: none; 
+    }
+    
+    .caixa-links sobre:hover{
+        border-bottom:1px solid black;
+        text-decoration:none;
+    }
+
+.caixa-links a{
+    position: relative;
+}
+
+.caixa-links a:hover{
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+
+.caixa-link a{
+    position: relative;
+}
+
+.caixa-link a:hover{
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.caixa-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 583px;
+    padding: 0px 14px;
+    height: 50px;
+    border: 1px solid #dadce0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin: 20px auto; 
+}
+
+.caixa-input:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28); /* Exemplo de sombra */
+    border-color: transparent; /* Mantém a borda transparente */
+}
+
+.caixa-input:hover{
+    box-shadow: 0 1px 6px rgb(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+.caixa-icone{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.input-pesquisa{
+    display: flex;
+    width: 100%;
+    height: 22px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    box-shadow: none;
+    position: relative;
+}
+
+.icone-lupa{
+    width: 23px;
+    min-width: 23px;
+    fill: #9aa0a6;
+}
+
+.icone-colorido{
+width: 26px;
+min-width: 26px;
+margin-right: 10px;
+margin: 0;
+}
+
+.icone-teclado{
+width: 24px;
+min-width: 24px;
+margin-right: 10px; 
+margin: 0;
+}
+
+.icone-colorido-container{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    min-width: 100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icone-colorido-container:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.icone-teclado-container{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icone-teclado-container:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.apps-container{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.apps-container:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.botao{
+    background-color: white;
+    color: rgb(18, 18, 18);
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+
+.botao:hover {
+    border: 1px solid #a2a2a2; 
+    background-color: #ffffff;    
+    }
+
+    .caixa-botoes{
+        display:flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+.body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.glogo {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-dispon {
+    margin-top: 20px; 
+}
+
+.portuga {
+    color: blue;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
